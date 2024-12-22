@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn English in Nepali</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Learn English in Nepali</h1>
+    <p>Enhance your English skills step by step!</p>
+  </header>
+  <main>
+    <section id="home">
+      <h2>Welcome</h2>
+      <p>Select your learning level:</p>
+      <button class="level-btn" onclick="startLesson('beginner')">Beginner</button>
+      <button class="level-btn" onclick="startLesson('intermediate')">Intermediate</button>
+      <button class="level-btn" onclick="startLesson('advanced')">Advanced</button>
+    </section>
+
+    <section id="lesson" class="hidden">
+      <h2 id="lesson-title"></h2>
+      <p id="lesson-content"></p>
+      <button onclick="showQuiz()">Take Quiz</button>
+    </section>
+
+    <section id="quiz" class="hidden">
+      <h2>Quiz</h2>
+      <p id="quiz-question"></p>
+      <button class="quiz-option" onclick="checkAnswer(1)">Option 1</button>
+      <button class="quiz-option" onclick="checkAnswer(2)">Option 2</button>
+      <button class="quiz-option" onclick="checkAnswer(3)">Option 3</button>
+      <p id="quiz-feedback"></p>
+      <button onclick="restart()">Restart</button>
+    </section>
+  </main>
+  <footer>
+    <p>© 2024 English Learning App</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
